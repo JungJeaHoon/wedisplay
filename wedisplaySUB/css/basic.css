@@ -1,0 +1,317 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body {font-family: 'TheJamsil5Bold',Arial, Helvetica, sans-serif;scroll-behavior: smooth;}
+a {color:#000;}
+
+.wrap {
+    overflow: hidden;
+    max-width:1980px;
+}
+/************* header ******************/
+header.on {
+    background: #fff;
+    position: fixed;
+}
+header.on .menu_list > li >a {
+    color: #000;    
+}
+header.on .consultation >p >a >span {
+    background: #000;
+    color:#fff;
+}
+header.on .consultation >p >a >span:hover {
+    background:  #C40452;
+    color:#fff;
+}
+header {
+    width: 100%;
+    
+    display: flex;
+
+    background: transparent;
+    border-bottom: 1px solid rgba(14, 13, 13, 0.4);
+    z-index: 10;
+    position: relative;
+    box-shadow: 10px 5px 5px rgba(14, 13, 13, 0.5);
+}
+.header_wrap {
+    width: 100%;
+    height: 81px;    
+    position: relative;
+    z-index: 1;
+    display: flex;
+    
+    line-height: 81px;
+}
+.logo {
+    position: absolute;
+    left: 50px;
+}
+.menu {
+    position: absolute;
+    left: 340px;
+}
+.menu_list {
+    display: flex;    
+}
+.menu_list > li >a {
+    color:#FFF;
+    padding: 25px 24px;
+}
+.consultation {
+    position: absolute;
+    right: 150px;
+}
+.icon_wrap {    
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;    
+}
+
+.consultation >p >a >span {
+    color:#000;
+    background: #fff;
+    border-radius:25px;
+    padding: 10px 20px;    
+}
+.consultation >p >a >span:hover {
+    background:  #C40452;
+    color:#fff;
+}
+.consultation >p >a >span >i{
+    padding-left: 3px;
+}
+.front {background: #000;}
+
+.menu_list_li {
+    position: relative;
+}
+.target {
+    position: absolute;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease-in-out;    
+}
+.sub_menu {
+    line-height: 40px;
+    position: absolute;
+    padding:0 30px 25px 12px;
+    background: #fff;
+    left: 10px;
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+.menu_list_li:hover .sub_menu {
+    display: block;
+    transition: .5s;
+}
+.sub_menu > li {    
+    font-size: 14px;
+}
+.sub_menu  > li >a {
+    color:#5d5b5b;
+}
+
+
+
+/************* main ******************/  
+
+
+
+.body_wrap {
+    max-width: 1000px;    
+    margin: auto;
+}
+.article_header {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #cccaca;
+}
+.article_header h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+.wrap_narrow {
+    margin-top: 80px;
+}
+.wrap_narrow > form {}
+.form_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem 2rem;    
+}
+    .form_input {
+        margin-top: 20px;
+    }
+    .form_input > input {
+        width: 90%;
+        height: 40px;
+    }
+.form_full {
+    grid-column: 1 / -1;
+}
+#field_content {
+    width: 95%;
+    height: 200px;
+}
+.upload_text {
+    font-size: 14px;
+    color:#494848;
+    margin-bottom: 10px;
+}
+.upload_extensions {
+    font-size: 14px;
+    color:#7c7a7a;
+    margin-bottom: 40px;
+}
+#upload_file {
+    position: absolute;
+    left: -9999px;
+}
+.jt-file-upload__btn {
+    display: inline-block;    
+    padding: 15px 30px;
+    background: #b6b3b3;
+    color:#fff;    
+    transition: .3s;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.form_full > label {}
+
+.areement {
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgb(233, 230, 230);
+}
+.areement_accordion {
+    margin-bottom: 10px;
+}
+.areement_title > label > span {
+    display: inline-block;
+    color: #C40452;
+}
+.areement_title > label > p {
+    display: inline-block;
+}
+.asome {
+    display: inline-block;
+}
+.asom_sub {
+    display: none;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 13px;
+    color:#c9c7c7;
+    width: 90%;
+    background: #f3f1f1;
+    padding: 15px;
+    transition: .5s;
+}
+.asom_sub.hidden {
+    display: block;
+    height: 150px;
+} 
+.btn {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.btn > button {
+    font-size: 18px;
+    padding: 20px 45px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #fff;
+    cursor: pointer;
+}
+.btn > button:hover {
+    background: #C40452;
+    color: #fff;
+    border: none;
+}
+
+
+
+
+
+/************* footer ******************/  
+
+
+
+footer {
+    width: 100%;
+    background: #000;
+}
+.footer_wrap {
+    max-width: 1500px;
+    margin:auto;
+    padding: 120px 0;
+}
+
+.footer_find {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+}
+.foot {
+    
+    text-align: center;
+}
+.fo_list1 {
+    padding-bottom: 70px;
+    border-bottom: 1px solid #3f3e3e;
+}
+.fo_list1 > li {
+    color: #b9b8b8;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.fo_list1 > li:first-child {
+    color:#fff;
+    font-size: 16px;
+}
+.footer_Finish {    
+    color:#fff;
+}
+.footer_above > a > span {
+    float:right;
+    margin-right: 40px;
+    padding: 15px 30px;
+    background: #3b3b3b;
+    color:#c7c5c5;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.footer_above > a > span:hover {
+    background:#C40452 ;
+    color:#fff;
+}
+
+.footer_Personal {
+    display: flex;
+    padding-top: 70px;
+}
+.footer_Personal > li {
+    margin-right: 30px;
+}
+.footer_Personal > li:first-child > a {
+    color:#C40452;
+}
+.footer_Personal > li > a {
+    color:#e6e0e0;
+    padding: 0 20ps;
+}
+.footer_below {
+    font-size: 13px;
+    margin-top: 40px;
+    color:#6b6a6a;
+    line-height: 20px;
+}
+.footer_below > p:last-child {
+    color:#494848;
+    font-size: 12px;
+    margin-top: 20px;
+}

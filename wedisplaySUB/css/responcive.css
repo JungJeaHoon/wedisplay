@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+
+/********************** 1000px ****************************/
+
+
+
+@media (max-width:1000px){    
+    .menu {
+        display: none;
+    }
+    .footer_Finish  {
+        padding: 0 50px;
+    }
+    .footer_above > a > span {
+        display: none;
+    }
+    .question{
+        padding: 0 80px;
+    }
+}
+
+
+/********************** 900px ****************************/
+
+
+
+@media (max-width:900px){}
+
+
+
+
+/********************** 700px ****************************/
+
+
+
+
+@media (max-width:700px){
+    .footer_Personal {
+        margin-top: 30px;
+        display: inline;
+        text-align: center;
+    }
+    .footer_Personal > li {
+        margin: 20px;
+    }
+}
+
+
+
+/********************** 500px ****************************/
+
+
+@media (max-width:500px){
+    .consultation {
+        right: 37px;
+    }
+    .footer_find {
+        display: block;
+    }
+    .foot {
+        margin-top: 50px;
+    }
+}
+
+
+/********************** 390px ****************************/
+
+
+@media (max-width:500px){
+    .sec3_card {
+        width: 70%;
+        margin: 0 auto 20px;
+    }
+    .sec3 {
+        height: 4470px;
+    }
+    .art1 {
+        display: block;
+    }
+    .sec6_right_img {
+        width: 100%;
+    }
+    .section7 {
+        margin-top: 450px;
+    }
+}
